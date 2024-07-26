@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>ID Card Generator</title>
+</head>
+
+<body>
+    <main>
+        <h1>Id Card Generator</h1>
+        <div>
+            <section id="input-details">
+                <h2>Enter Student details</h2>
+                <form action="#">
+                    <p>
+                        <label for="input-name">Enter Name:</label>
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            <input id="input-name" type="text">
+                        </span>
+                    </p>
+                    <p>
+                        <label for="input-college">Enter College Name:</label>
+                        <span>
+                            <i class="fa-solid fa-building-columns"></i>
+                            <input id="input-college" type="text">
+                        </span>
+                    </p>
+                    <p>
+                        <label for="input-location">Enter Location:</label>
+                        <span>
+                            <i class="fa-solid fa-address-book"></i>
+                            <input id="input-location" type="text">
+                        </span>
+                    </p>
+                    <p>
+                        <label for="input-image">Enter student's picture:</label>
+                        <input id="input-image" type="file">
+                    </p>
+                    <button>Generate Card</button>
+                </form>
+            </section>
+            <section id="output-details">
+                <div id="card" class="hidden">
+                    <div id="profile-picture">
+                        <div id="image"></div>
+                    </div>
+                    <div id="details">
+                        <p>Name: <span class="detail name"></span></p>
+                        <p>College Name: <span class="detail college"></span></p>
+                        <p>Location: <span class="detail location"></span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
